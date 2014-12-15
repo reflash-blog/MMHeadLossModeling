@@ -21,37 +21,37 @@
         <Label Content="L, м" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
         <TextBox Text="{Binding L,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="D, м" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding D,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding D,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="N" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding N,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding N,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="&#1009;, кг/м^3" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Ro,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Ro,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="&#x3bc;, Па·с" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Mu,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Mu,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="&#x3b4;, мм" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Delta,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Delta,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="&#x3bd;, м^3/ч" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Nu,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding Nu,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="W, м/с^2" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding WStart, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
-        <TextBox Text="{Binding WEnd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="143,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
+        <TextBox Text="{Binding WStart, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
+        <TextBox Text="{Binding WEnd, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="143,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
         <Label Content="h" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding H, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Items,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" CanUserAddRows="True" HorizontalAlignment="Left" Margin="233,65,0,0" VerticalAlignment="Top" Height="212" Width="183">
+        <TextBox Text="{Binding H, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" HorizontalAlignment="Left" Height="23" Margin="75,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Items,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" CanUserAddRows="True" HorizontalAlignment="Left" Margin="233,65,0,0" VerticalAlignment="Top" Height="212" Width="183">
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="R(N)" Binding="{Binding R,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="*" />
+                <DataGridTextColumn Header="R(N)" Binding="{Binding R,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" Width="*" />
 
-                <DataGridTextColumn Header="&#x3c6;(N)" Binding="{Binding Phi,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="*" />
+                <DataGridTextColumn Header="&#x3c6;(N)" Binding="{Binding Phi,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" Width="*" />
 
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Substances, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" CanUserAddRows="True" HorizontalAlignment="Left" Margin="438,65,0,0" VerticalAlignment="Top" Height="212" Width="192">
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Substances, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" CanUserAddRows="True" HorizontalAlignment="Left" Margin="438,65,0,0" VerticalAlignment="Top" Height="212" Width="192">
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="Вещество" Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*" />
+                <DataGridTextColumn Header="Вещество" Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Width="*" />
 
-                <DataGridTextColumn Header="Плотность" Binding="{Binding Density, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*" />
+                <DataGridTextColumn Header="Плотность" Binding="{Binding Density, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Width="*" />
 
             </DataGrid.Columns>
         </DataGrid>
